@@ -1,0 +1,5 @@
+div.row(ng-controller="feed_controller as feed")
+  div(class="col-sm-6")
+    fd-feed(feed-type="{{ feed.name }}" feed-items-count="feeds.default_items_count")
+
+  div(class="col-sm-6" ui-view="")

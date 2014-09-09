@@ -1,0 +1,1 @@
+feeds = angular.module('feeds', [])

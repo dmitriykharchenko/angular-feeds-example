@@ -1,0 +1,13 @@
+._*
+.DS_Store
+thumbs.db
+/build
+/.idea
+*.orig
+*.sublime-project
+*.sublime-workspace
+/node_modules
+/public
+.npm-debug.log
+npm-debug.log
+app/bower_components

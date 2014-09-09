@@ -1,0 +1,13 @@
+div.row
+  div.col-sm-6
+    a(href="/feeds/instagram/{{ item.id }}")
+      img(ng-src="{{ item.images.low_resolution.url }}" width="100%")
+  div.col-sm-6
+    p
+      a(href="http://instagram.com/{{ item.user.username }}" target="_blank")
+        @{{ item.user.username }}
+    p
+      {{ item.caption.text }}
+    p
+      a(href="/feeds/instagram/{{ item.id }}")
+        span details

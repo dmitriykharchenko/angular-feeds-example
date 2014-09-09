@@ -1,0 +1,27 @@
+doctype html
+html(lang="en" ng-app="app")
+  head
+    base(href="/")
+    title= angular-test-task
+    script(type='text/javascript' src="/javascripts/lib.js")
+    script(type='text/javascript' src="/javascripts/app.js")
+    link(rel='stylesheet' href="/stylesheets/app.css")
+
+  body
+    header
+      div.container
+        nav.collapse.navbar-collapse.bs-navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href="/feeds")
+                i.fa.fa-rss
+
+            li
+              a(href="/feeds/instagram")
+                i.fa.fa-instagram
+
+            li
+              a(href="/feeds/flickr")
+                i.fa.fa-flickr
+
+    div.container(ui-view ng-controller="feeds_controller as feeds")

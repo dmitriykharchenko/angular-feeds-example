@@ -1,0 +1,13 @@
+div.row
+  div.col-sm-6
+    a(href="/feeds/flickr/{{ item.id }}")
+      img(ng-src="{{ item.media.m }}" width="100%")
+  div.col-sm-6
+    p
+      a(href="http://www.flickr.com/photos{{ item.author_id }}" target="_blank")
+        @{{ item.author }}
+    p
+      {{ item.title }}
+    p
+      a(href="/feeds/flickr/{{ item.id }}")
+        span details

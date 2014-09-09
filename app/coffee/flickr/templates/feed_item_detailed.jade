@@ -1,0 +1,15 @@
+div.row
+  div.col-sm-12
+    a(href="/feeds/flickr/{{ item.id }}")
+      img(src="{{ item.media.m }}" width="100%")
+div.row
+  div.col-sm-6
+
+    a.edit_trigger(href="javascript:void(0)" ng-click="edit_caption()")
+      i.fa.fa-edit(ng-show="!is_edit_mode")
+
+    div(ng-click="edit_caption()" ng-model="item.title" contenteditable="{{ is_edit_mode }}")
+
+    p(ng-show="is_edit_mode")
+      button.btn.btn-link(ng-click="reset_caption()") reset
+      button.btn.btn-primary(ng-click="save_caption()") save
